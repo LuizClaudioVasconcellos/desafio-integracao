@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/desafio-intrgracao/src",
+  "monorepo": true,
+  "root": "apps/desafio-intrgracao",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/desafio-intrgracao/tsconfig.app.json"
+  },
+  "projects": {
+    "desafio-intrgracao": {
+      "type": "application",
+      "root": "apps/desafio-intrgracao",
+      "entryFile": "main",
+      "sourceRoot": "apps/desafio-intrgracao/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/desafio-intrgracao/tsconfig.app.json"
+      }
+    },
+    "my-app": {
+      "type": "application",
+      "root": "apps/my-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/my-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/my-app/tsconfig.app.json"
+      }
+    },
+    "estoque": {
+      "type": "application",
+      "root": "apps/estoque",
+      "entryFile": "main",
+      "sourceRoot": "apps/estoque/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/estoque/tsconfig.app.json"
+      }
+    },
+    "teste": {
+      "type": "application",
+      "root": "apps/teste",
+      "entryFile": "main",
+      "sourceRoot": "apps/teste/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/teste/tsconfig.app.json"
+      }
+    },
+    "categorias": {
+      "type": "application",
+      "root": "apps/categorias",
+      "entryFile": "main",
+      "sourceRoot": "apps/categorias/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/categorias/tsconfig.app.json"
+      }
+    },
+    "produtos": {
+      "type": "application",
+      "root": "apps/produtos",
+      "entryFile": "main",
+      "sourceRoot": "apps/produtos/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/produtos/tsconfig.app.json"
+      }
+    }
+  }
+}
